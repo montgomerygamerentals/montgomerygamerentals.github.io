@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+
+    <title>Montgomery Game Rentals</title>
+  </head>
+  <body>
+    <nav id="myNavbar" class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+          <a id="navbarLogo" class="" href="index.html"><img src="Logos/logo_2.png" alt="Home"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#forPricesLink">Prices</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+
+        <!-- MODAL -->
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+          <!-- The Close Button -->
+          <span class="close">&times;</span>
+
+          <!-- Modal Content (The Image) -->
+          <img class="modal-content" id="img01">
+
+          <!-- Modal Caption (Image Text) -->
+          <div id="caption"></div>
+        </div>
+
+        <!-- MODAL -->
+
+        <div id="myPartyPackCard" class="buildYourOwnUnorderedList">
+            <div class="myCard">
+                <div class="card">
+                    <div class="card-body pb-0"> 
+
+                      <div class="row">
+                        <div class="col-4 ">
+                          <h5 id="buildYourOwnTitle" class="card-title">Build Your Own</h5>
+
+                          <form  action="checkOut.html?checkOutType=buildYourOwn" method="POST">
+                            <ul>
+
+                              <li class="myListBuildYourOwn"><input value="25" name="checkBoxGiant Jenga" type="checkbox" id="checkBoxJenga"> <label for="checkBoxJenga">Giant Jenga</label></li>
+                              <li class="myListBuildYourOwn"><input value="25" name="checkBoxGiant Beer Pong" type="checkbox" id="checkBoxPong"> <label for="checkBoxPong">Giant Beer Pong</label></li>
+                              <li class="myListBuildYourOwn"><input value="25" name="checkBoxKan Jam Pro" type="checkbox" id="checkBoxKan"> <label for="checkBoxKan">Kan Jam Pro</label></li>
+                              <li class="myListBuildYourOwn"><input value="25" name="checkBoxLadder Toss" type="checkbox" id="checkBoxLadder"> <label for="checkBoxLadder">Ladder Toss</label></li>
+                              <li class="myListBuildYourOwn"><input value="25" name="checkBoxCorn Hole" type="checkbox" id="checkBoxCorn"> <label for="checkBoxCorn">Corn Hole</label></li>
+                              <li class="myListBuildYourOwn"><input value="25" name="checkBoxGiant Tic-Tac-Toe" type="checkbox" id="checkBoxTic"> <label for="checkBoxTic">Giant Tic-Tac-Toe</label></li>
+                              <li class="myListBuildYourOwn"><input value="25" name="checkBoxGiant Checkers" type="checkbox" id="checkBoxCheckers"> <label for="checkBoxCheckers">Giant Checkers</label></li>
+                              <li class="myListBuildYourOwn"><input value="25" name="checkBoxGiant Uno" type="checkbox" id="checkBoxUno"> <label for="checkBoxUno">Giant Uno</label></li>
+  
+                            </ul>       
+                                              
+
+                            <div class="mt-4">
+                              <a href="#" class="btn ml-3 mb-3 align-top" onclick="submitForm()">Check Out</a>
+
+                              <span id="finalPrice" class="prices">$0</span>
+                            </div>
+
+                          </form>
+
+                        </div>
+
+
+                        <div class="col-8">
+                          <div class="row">
+                            <div class="col-lg-4 col-md-12 mb-3 mb-lg-0 p-2">
+                              <img
+                                id="cornImage"
+                                src="images/corn.jpg"
+                                class="myImg w-100 shadow-1-strong rounded mb-3 tinted-image"
+                                alt="Corn Hole"
+                              />
+                          
+                              <img
+                                id="kanImage"
+                                src="images/kan.jpg"
+                                class="myImg w-100 shadow-1-strong rounded mb-3 tinted-image"
+                                alt="Kan Jam Pro"
+                              />
+
+                              <img
+                                id="ladderImage"
+                                src="images/ladder.jpg"
+                                class="myImg w-100 shadow-1-strong rounded mb-3 tinted-image"
+                                alt="Ladder Toss"
+                              />
+                            </div>
+                          
+                            <div class="col-lg-4 mb-3 mb-lg-0 p-2">
+                              <img
+                                id="jengaImage"
+                                src="images/jenga.jpg"
+                                class="myImg w-100 shadow-1-strong rounded mb-3 tinted-image"
+                                alt="Giant Jenga"
+                              />
+                          
+                              <img
+                                id="allGamesImage"
+                                src="images/allGames.jpg"
+                                class="myImg w-100 shadow-1-strong rounded mb-3 tinted-image"
+                                alt="All Games"
+                              />
+
+                              <img
+                                id="checkersImage"
+                                src="images/checkers.jpg"
+                                class="myImg w-100 shadow-1-strong rounded mb-3 tinted-image"
+                                alt="Giant Checkers"
+                              />
+                            </div>
+                          
+                            <div class="col-lg-4 mb-3 mb-lg-0 p-2">
+                              <img
+                                id="pongImage"
+                                src="images/pong.jpg"
+                                class="myImg w-100 shadow-1-strong rounded mb-3 tinted-image"
+                                alt="Giant Pong"
+                              />
+                          
+                              <img
+                                id="tictacImage"
+                                src="images/tictac.jpg"
+                                class="myImg w-100 shadow-1-strong rounded mb-3 tinted-image"
+                                alt="Tic-Tac-Toe"
+                              />
+
+                              <img
+                                id="unoImage"
+                                src="images/uno.jpg"
+                                class="myImg w-100 shadow-1-strong rounded mb-3 tinted-image"
+                                alt="Giant Uno"
+                              />
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+    <!-- my javascript -->
+    <script src="JS/script.js"></script>
+    <script src="JS/buildYourOwn.js"></script>
+  </body>
+</html>

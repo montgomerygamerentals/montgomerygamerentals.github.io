@@ -1,0 +1,7 @@
+logo colors:
+
+blue = #1bbbf4
+       rgb(27,187,244)
+
+purple = #7a49a9
+         rgb(122,73,169)
