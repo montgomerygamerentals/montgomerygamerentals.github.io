@@ -3,14 +3,16 @@ body, html {
     width: 100%;
     margin: 0 0 700px 0;
     background: rgb(255,255,255);
-    /* background: linear-gradient(180deg, rgba(255,255,255,0.35066526610644255) 18%, rgba(122,73,169,0.35066526610644255) 96%, rgba(27,187,244,0.6699929971988796) 100%); */
-    /* background: linear-gradient(0deg, rgba(255,255,255,0.35066526610644255) 35%, rgba(122,73,169,0.35066526610644255) 88%, rgba(27,187,244,0.6699929971988796) 93%); */
-    /* background: linear-gradient(0deg, rgba(255,255,255,0.5663515406162465) 88%, rgba(122,73,169,0.5971638655462185) 89%, rgba(27,187,244,0.6699929971988796) 93%); */
-    background: linear-gradient(0deg, rgba(255,255,255,0.5663515406162465) 89%, rgba(122,73,169,0.5971638655462185) 90%, rgba(27,187,244,0.6699929971988796) 93%);
-
-
-
+    background-image: linear-gradient(0deg, rgba(255,255,255,0.5663515406162465) 89%, rgba(122,73,169,0.5971638655462185) 90%, rgba(27,187,244,0.6699929971988796) 93%);
     background-repeat: no-repeat;
+}
+
+@media (max-width: 575.98px) {
+    body, html {
+        background: linear-gradient(0deg, rgba(255,255,255,0.5663515406162465) 91%, rgba(122,73,169,0.5971638655462185) 92%, rgba(27,187,244,0.6699929971988796) 93%);
+        background-repeat: no-repeat;
+
+    }
 }
 
 #navbarLogo {
@@ -25,7 +27,12 @@ body, html {
 #myNavbar {
     padding: 10px 0 10px 15px;
     background-color: rgb(255,255,255);
-    /* border-bottom: 4px solid rgba(122, 73, 169); */
+}
+
+@media (max-width: 575.98px) {
+    #myNavbar {
+        padding: 10px 20px 10px 15px;
+    }
 }
 
 #myNavbar a {
@@ -33,12 +40,11 @@ body, html {
     font-size: larger;
 
     transition: all .2s ease-in-out;
-}
+}  
 
 @media (min-width: 992px) {
     #myNavbar a:hover {
         transform: scale(1.3);
-        
     }
 }
 
@@ -75,23 +81,62 @@ body, html {
     text-align: left;
 }
 
+/* header and paragraph query */
+@media (max-width: 575.98px) {
+    #header {
+        padding-top: 50px;
+        margin: auto;
+        width: 100%;
+    }
+
+    #mainTitle {
+        font-size: 35px;
+    }
+    
+    #secondTitle {
+        font-size: 35px;
+    }
+
+    #headerParagraph{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 0px 0px 0 10px;
+        font-size: 14px;
+        border-left: 4px solid rgba(122, 73, 169, 0.6);
+        text-align: left;
+    }
+}
+
 .carousel-item {
     width: auto;
     height: 20rem;
     max-height: 20rem;
-
 }
 
 .slideDiv {
     border: 4px solid rgba(122, 73, 169, 0.6);
     padding: 0;
     border-radius: 4px;
-
 }
 
 video {
     width: 100% !important;
     height: 100% !important;
+}
+
+/* carousel query */
+@media (max-width: 575.98px) {
+    .carousel-item {
+        width: auto;
+        height: 16rem;
+        max-height: 20rem;
+    }
+    
+    .slideDiv {
+        border: 4px solid rgba(122, 73, 169, 0.6);
+        padding: 0;
+        border-radius: 4px;
+    }
 }
 
 #optionsTitle {
@@ -140,6 +185,71 @@ video {
     box-shadow: 0 0 8px rgba(122, 73, 169);
 }
 
+.prices {
+    color: rgba(122, 73, 169);
+    font-size: 30px;
+    padding-left: 5px;
+    font-family: monospace;
+}
+
+/* cards query */
+@media (max-width: 575.98px) {
+    #optionsTitle {
+        margin-top: 80px;
+        margin-bottom: 35px;
+        font-size: 30px;
+    }
+    
+    #cards {
+        margin: auto;
+        width: 95%;
+    }
+    
+    .myCard {
+        margin: auto;
+        margin-bottom: 30px;
+
+    }
+    
+    .cardHover {
+        transition: all .2s ease-in-out; 
+    }
+    
+    .cardHover:hover {
+        transform: scale(1.03); 
+    }
+    
+    .card-title {
+        font-size: 25px;
+        border-left: 4px solid rgba(122, 73, 169, 0.6);
+        padding-left: 8px;
+    }
+    
+    .card-text {
+        font-size: 16px;
+    }
+    
+    .btn {
+        color: white;
+        background-color: rgba(122, 73, 169);
+        font-size: 16px;
+    
+    }
+    
+    .btn:hover {
+        color: white;
+        background-color: rgba(122, 73, 169, 0.8);
+        box-shadow: 0 0 8px rgba(122, 73, 169);
+    }
+
+    .prices {
+        color: rgba(122, 73, 169);
+        font-size: 24px;
+        padding-left: 5px;
+        font-family: monospace;
+    }
+}
+
 
 
 /* For party pack page */
@@ -163,13 +273,6 @@ video {
 .myList {
     font-size: 25px;
     margin-left: 20px;
-}
-
-.prices {
-    color: rgba(122, 73, 169);
-    font-size: 30px;
-    padding-left: 5px;
-    font-family: monospace;
 }
 
 .card {
