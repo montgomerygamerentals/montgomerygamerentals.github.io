@@ -581,7 +581,7 @@ input[type="checkbox"]:checked + label::before {
     #myCheckOutCard {
         margin: auto;
         width: 100%;
-        margin-top: 60px;
+        margin-top: 40px;
     }
     
     #checkOutList {
