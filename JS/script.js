@@ -42,3 +42,9 @@ $(document).ready(function() {
   $('img.jsResize').addClass('mb-3');
 });
 
+
+// resizes the carousel
+$(window).on('resize', function () {
+  $('#carouselExampleIndicators').height($('#carouselExampleIndicators .carousel-item:first img').height());
+}).trigger('resize');
+
