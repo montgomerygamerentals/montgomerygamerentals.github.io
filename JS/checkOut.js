@@ -71,3 +71,11 @@ if (query === "partyPack") {
 
 
 
+// removes some bootstrap classes for smaller device viewing
+$(document).ready(function() {
+    if ($(window).width() < 768) {
+      $('.col-6').addClass('col-12').removeClass('col-6');
+
+    }
+});
+  

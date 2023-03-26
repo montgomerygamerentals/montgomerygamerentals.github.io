@@ -573,4 +573,39 @@ input[type="checkbox"]:checked + label::before {
     margin-left: 20px;
 }
 
+@media (max-width: 575.98px) {
+    #buildYourOwnTitle {
+        margin-left: 0;
+    }
 
+    #myCheckOutCard {
+        margin: auto;
+        width: 100%;
+        margin-top: 60px;
+    }
+    
+    #checkOutList {
+        font-size: 37px;
+    }
+    
+    #checkOutListTitle {
+        font-size: 30px;
+        /* border-left: 4px solid rgba(27,187,244, 0.6); */
+    
+    }
+    
+    #checkOutList ul {
+        list-style-image: url("images/newBullet.png");
+        margin-top: 20px;
+    }
+    
+    .checkOutListItems {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+
+    .myInput {
+        margin: auto;
+        width: 100%;
+    }
+}
