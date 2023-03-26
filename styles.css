@@ -384,7 +384,7 @@ video {
     }
     
     #partyPackTitle {
-        font-size: 37px;
+        font-size: 30px;
         margin-left: 20px;
     }
     
@@ -484,7 +484,7 @@ input[type="checkbox"]:checked + label::before {
 
 @media (max-width: 575.98px) {
     #buildYourOwnTitle {
-        font-size: 35px;
+        font-size: 30px;
         margin-left: 20px;
     }
     
@@ -574,8 +574,9 @@ input[type="checkbox"]:checked + label::before {
 }
 
 @media (max-width: 575.98px) {
-    #checkOutTitle{
+    .formTitle{
         margin-left: 0px;
+        font-size: 30px;
     }
 
     #checkOutButton {
@@ -586,6 +587,8 @@ input[type="checkbox"]:checked + label::before {
         margin: auto;
         width: 100%;
         margin-top: 40px;
+        padding-bottom: 50px;
+
     }
     
     #checkOutList {
