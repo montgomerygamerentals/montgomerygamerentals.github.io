@@ -207,7 +207,8 @@ video {
     
     #cards {
         margin: auto;
-        width: 95%;
+        width: 100%;
+        margin-bottom: 0;
     }
     
     .myCard {
@@ -286,7 +287,6 @@ video {
 }
 
 .card img {
-    /* box-shadow: 3px 3px rgb(122, 73, 169); */
     border: 1px solid black;
 
 }
@@ -295,7 +295,6 @@ video {
     box-shadow: 2px 2px black;
 
 }
-
 
 /* for the modal */
 /* Style the Image Used to Trigger the Modal */
@@ -374,6 +373,51 @@ video {
 @media only screen and (max-width: 700px){
     .modal-content {
       width: 100%;
+    }
+}
+
+@media (max-width: 575.98px) {
+    #myPartyPackCard {
+        margin: auto;
+        width: 100%;
+        margin-top: 40px;
+        padding-bottom: 50px;
+    }
+    
+    #partyPackTitle {
+        font-size: 37px;
+        margin-left: 20px;
+    }
+    
+    .myUnorderedList ul {
+        list-style-image: url("images/newBullet.png");
+        margin-top: 20px;
+    }
+    
+    .myList {
+        font-size: 25px;
+        margin-left: 20px;
+    }
+    
+    .card {
+        box-shadow: 3px 3px rgb(122, 73, 169);
+        border: 1px solid black;
+    }
+    
+    .card img {
+        border: 1px solid black;
+
+    }
+    
+    .btn {
+        box-shadow: 2px 2px black;
+        margin-bottom: 30px;
+    }
+    
+    #imageDiv {
+        width: 90%;
+        margin: auto;
+
     }
 }
 

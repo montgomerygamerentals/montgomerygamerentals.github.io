@@ -24,3 +24,21 @@ let span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
   modal.style.display = "none";
 }
+
+
+// removes some bootstrap classes for smaller device viewing
+$(document).ready(function() {
+  if ($(window).width() < 768) {
+    $('.col-4').removeClass('col-4');
+    $('.col-8').removeClass('col-8');
+    $('.p-2').removeClass('p-2');
+    $('.mb-3').removeClass('mb-3');
+
+  }
+});
+
+// add bootstrap class for images
+$(document).ready(function() {
+  $('img.jsResize').addClass('mb-3');
+});
+
