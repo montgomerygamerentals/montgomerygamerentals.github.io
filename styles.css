@@ -2,6 +2,7 @@ body, html {
     height: 100%;
     width: 100%;
     margin: 0 0 700px 0;
+    padding: 0;
     background: rgb(255,255,255);
     background-image: linear-gradient(0deg, rgba(255,255,255,0.5663515406162465) 89%, rgba(122,73,169,0.5971638655462185) 90%, rgba(27,187,244,0.6699929971988796) 93%);
     background-repeat: no-repeat;
