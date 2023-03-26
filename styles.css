@@ -214,7 +214,6 @@ video {
     .myCard {
         margin: auto;
         margin-bottom: 30px;
-
     }
     
     .cardHover {
@@ -238,8 +237,7 @@ video {
     .btn {
         color: white;
         background-color: rgba(122, 73, 169);
-        font-size: 16px;
-    
+        font-size: 16px;   
     }
     
     .btn:hover {
@@ -419,6 +417,14 @@ video {
         margin: auto;
 
     }
+
+    #partyPackButton {
+        font-size: 20px;
+    }
+
+    #partyPackPrice {
+        font-size: 30px;
+    }
 }
 
 
@@ -473,6 +479,69 @@ input[type="checkbox"]:checked + label::before {
   
 .tinted-image {
     filter: opacity(70%);
+}
+
+@media (max-width: 575.98px) {
+    #buildYourOwnTitle {
+        font-size: 35px;
+        margin-left: 20px;
+    }
+    
+    .buildYourOwnUnorderedList ul {
+        margin-top: 20px;
+        list-style: none;
+        padding-left: 10px;
+    }
+    
+    .myListBuildYourOwn {
+        font-size: 25px;
+        margin-left: 0;
+    }
+    
+    input[type="checkbox"] {
+        width: 20px;
+        height: 20px;
+        vertical-align: 0px;
+    
+    }
+    
+    input[type="checkbox"] {
+        display: none; /* Hide the default checkbox */
+    }
+    
+    input[type="checkbox"] + label::before {
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-right: 5px;
+    }
+    
+    input[type="checkbox"]:checked + label::before {
+        content: "\1F3B2"; 
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: #fff;
+        background-color: rgb(122, 73, 169); /* Change this to the desired color */
+        border: none;
+        vertical-align: 3px;
+    }
+      
+    .tinted-image {
+        filter: opacity(70%);
+    }
+
+    #buildYourOwnButton {
+        font-size: 20px;
+    }
+
+    #finalPrice {
+        font-size: 30px;
+    }
 }
 
 
