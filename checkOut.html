@@ -66,7 +66,7 @@
                         <div class="row">
                             <div class="col-6">
 
-                              <h5 id="buildYourOwnTitle" class="card-title d-inline">Check Out</h5>
+                              <h5 id="checkOutTitle" class="card-title d-inline">Check Out</h5>
                               <span id="emailHelp" class="form-text text-muted">We'll email you back ASAP.</span>
 
                               <form name="checkoutForm" class="mt-4" action="https://formsubmit.co/montgomerygamerentals@gmail.com" method="POST">
@@ -87,14 +87,14 @@
                                 </div>
                                 <div class="form-group">
                                   <label for="date">Date of Your Event</label>
-                                  <input type="date" class="form-control myInput" name="Date of Event" id="date" placeholder="Date of Your Event" required>
+                                  <input type="date" class="form-control" name="Date of Event" id="date" placeholder="Date of Your Event" required>
                                 </div> 
 
                                 <input type="hidden" name="Which Games" id="whichGames">
                                 <input type="hidden" name="Total Price" id="totalPrice">
 
                                 
-                                <button type="submit" class="btn mb-4 mt-2">Submit</button>
+                                <button id="checkOutButton" type="submit" class="btn mb-4 mt-2">Submit</button>
 
                                 <span id="finalPrice" class="prices">$0</span>
 

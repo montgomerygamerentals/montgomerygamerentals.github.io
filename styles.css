@@ -574,8 +574,12 @@ input[type="checkbox"]:checked + label::before {
 }
 
 @media (max-width: 575.98px) {
-    #buildYourOwnTitle {
-        margin-left: 0;
+    #checkOutTitle{
+        margin-left: 0px;
+    }
+
+    #checkOutButton {
+        font-size: 20px;
     }
 
     #myCheckOutCard {
@@ -602,10 +606,5 @@ input[type="checkbox"]:checked + label::before {
     .checkOutListItems {
         font-size: 20px;
         margin-left: 20px;
-    }
-
-    .myInput {
-        margin: auto;
-        width: 100%;
     }
 }
