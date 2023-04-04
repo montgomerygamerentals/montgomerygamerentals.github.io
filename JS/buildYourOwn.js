@@ -50,10 +50,10 @@ for (let checkbox of checkboxes) {
                     jengaImage.classList.remove("tinted-image");
                     checkBoxJenga.classList.add("selected");
                     break;                
-                case "checkBoxGiant Checkers": 
-                    checkersImage.classList.remove("tinted-image");
-                    checkBoxCheckers.classList.add("selected");
-                    break;
+                // case "checkBoxGiant Checkers": 
+                //     checkersImage.classList.remove("tinted-image");
+                //     checkBoxCheckers.classList.add("selected");
+                //     break;
                 case "checkBoxGiant Beer Pong":
                     pongImage.classList.remove("tinted-image");
                     checkBoxPong.classList.add("selected");
@@ -61,6 +61,8 @@ for (let checkbox of checkboxes) {
                 case "checkBoxGiant Tic-Tac-Toe": 
                     tictacImage.classList.remove("tinted-image");
                     checkBoxTic.classList.add("selected");
+
+                    checkersImage.classList.remove("tinted-image");
                     break;
                 case "checkBoxGiant Uno":
                     unoImage.classList.remove("tinted-image");
@@ -89,10 +91,10 @@ for (let checkbox of checkboxes) {
                     jengaImage.classList.add("tinted-image");
                     checkBoxJenga.classList.remove("selected");
                     break;                
-                case "checkBoxGiant Checkers": 
-                    checkersImage.classList.add("tinted-image");
-                    checkBoxCheckers.classList.remove("selected");
-                    break;
+                // case "checkBoxGiant Checkers": 
+                //     checkersImage.classList.add("tinted-image");
+                //     checkBoxCheckers.classList.remove("selected");
+                //     break;
                 case "checkBoxGiant Beer Pong":
                     pongImage.classList.add("tinted-image");
                     checkBoxPong.classList.remove("selected");
@@ -100,6 +102,8 @@ for (let checkbox of checkboxes) {
                 case "checkBoxGiant Tic-Tac-Toe": 
                     tictacImage.classList.add("tinted-image");
                     checkBoxTic.classList.remove("selected");
+
+                    checkersImage.classList.add("tinted-image");
                     break;
                 case "checkBoxGiant Uno":
                     unoImage.classList.add("tinted-image");
