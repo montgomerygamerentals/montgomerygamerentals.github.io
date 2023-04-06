@@ -11,7 +11,7 @@ document.getElementById("date").setAttribute('min', today);
 
 if (query === "partyPack") {
 
-    checkOutList.innerHTML = '<h5 id="checkOutListTitle" class="card-title">Your Items</h5>' +
+    checkOutList.innerHTML = '<h5 id="checkOutListTitle" class="card-title">Your Games</h5>' +
                             '<ul>' +
                             '<li class="checkOutListItems">Giant Jenga</li>' +
                             '<li class="checkOutListItems">Giant Beer Pong</li>' +
@@ -42,7 +42,7 @@ if (query === "partyPack") {
     const params = new URLSearchParams(queryString);
 
     // Generate the HTML for the list
-    let listHTML = '<h5 id="checkOutListTitle" class="card-title">Your Items</h5>' +
+    let listHTML = '<h5 id="checkOutListTitle" class="card-title">Your Games</h5>' +
                 '<ul id="checkOutUnorderedList">';
 
     params.forEach(function(value, key) {
